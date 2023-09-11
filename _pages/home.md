@@ -25,5 +25,5 @@ Internship
 Publications
 ======
   <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
+    {% include pub-single-cv.html %}
   {% endfor %}</ul>

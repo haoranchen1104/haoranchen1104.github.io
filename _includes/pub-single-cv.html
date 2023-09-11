@@ -33,9 +33,22 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{post.type}} at {{ post.venue }},  {{post.location}}</p>{% endif %}
-    </li>
-  </article>
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+    {% if post.codeurl and post.paperurl %}
+      <p><a href=" {{ post.paperurl }} "><u>Paper</u></a> <a href=" {{ post.codeurl }} "><u>Code</u></a></p>
+    {% elsif post.paperurl %}
+      <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
+    {% elsif post.codeurl %}
+      <p><a href=" {{ post.codeurl }} "><u>Code</u></a></p>
+    {% endif %}  
+  </li>
+ </article>
 </div>
-
