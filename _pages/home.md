@@ -10,6 +10,8 @@ redirect_from:
 
 {% include base_path %}
 
+---
+
 Education
 ======
 * Bachelor of Engineering in Information Science, Huazhong University of Science and Technology, 2017-2021
