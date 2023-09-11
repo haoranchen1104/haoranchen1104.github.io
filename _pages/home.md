@@ -13,7 +13,7 @@ redirect_from:
 Education
 ======
 * Bachelor of Engineering in Information Science, Huazhong University of Science and Technology, 2017-2021
-  * GPA: 3.95/4.00 (rank: $$1^st$$); National Scholarship (2020)
+  * GPA: 3.95/4.00 (rank: $$1^{st}$$); National Scholarship (2020)
 * Master in Robotics, Systems and Control,  ETH Zürich, 2021-2024 (expected)
 
 Internship
@@ -25,5 +25,5 @@ Internship
 Publications
 ======
   <ul>{% for post in site.publications %}
-    {% include archive-single.html %}
+    {% include archive-single-cv.html %}
   {% endfor %}</ul>
