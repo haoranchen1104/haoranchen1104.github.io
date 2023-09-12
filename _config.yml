@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Haoran Chen"
 title_separator          : "-"
 name                     : &name "Haoran Chen (陈浩然)"
-description              : &description "Hi, I am currently a master student at ETH Zürich."
+description              : &description "Personal Website"
 url                      : https://haoranchen1104.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "haoranchen1104/haoranchen1104.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Haoran Chen (陈浩然)"
   avatar           : "profile.jpg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Hi, I am currently a master student at ETH Zürich. I am passionate about 3D scene reconstruction and understanding."
   location         : "Zürich, Switzerland"
   # employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
