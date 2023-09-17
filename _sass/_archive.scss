@@ -298,27 +298,31 @@
     margin-left:1rem;
 
     .archive__item-title {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
       margin-top: 0.5em;
       font-size: $type-size-5;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
     }
 
     .archive__item-excerpt {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
-      display: inline-block;
     }
 
     .archive__item-excerpt#citation {
       font-size: $type-size-7;
-      max-height: 15px;
+      // max-height: 15px;
+      -webkit-line-clamp: 1;
     }
     .archive__item-excerpt#intro {
       font-size: $type-size-6;
-      max-height: 140px;
+      // max-height: 140px;
+      -webkit-line-clamp: 4;
     }
   }
   .card-footer{
