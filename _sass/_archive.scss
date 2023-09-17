@@ -301,17 +301,21 @@
       font-size: $type-size-5;
     }
 
+    .archive__item-excerpt {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      width: calc(auto);
+    }
+
     .archive__item-excerpt#citation {
       font-size: $type-size-7;
       max-height: 15px;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     .archive__item-excerpt#intro {
       font-size: $type-size-6;
       max-height: 140px;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
   }
   .card-footer{
