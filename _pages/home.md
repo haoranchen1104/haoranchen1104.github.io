@@ -21,7 +21,7 @@ Education
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
-    {% include pub-single-cv.html type="feature" %}
+    {% include pub-single-cv.html type="grid" %}
   {% endfor %}</ul>
 
 Internship

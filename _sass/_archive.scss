@@ -129,6 +129,7 @@
   }
 
   @include breakpoint($small) {
+    padding-right: $right-sidebar-width-narrow;
     @include gallery(5 of 10);
     .archive__item-teaser {
       max-height: 200px;
@@ -140,6 +141,7 @@
   }
 
   @include breakpoint($medium) {
+    padding-right: $right-sidebar-width;
     margin-left: 0; /* reset before mixin does its thing*/
     margin-right: 0; /* reset before mixin does its thing*/
     @include gallery(2.5 of 10);
@@ -160,6 +162,7 @@
   }
 
   @include breakpoint($large) {
+    padding-right: $right-sidebar-width-wide;
     margin-left: 0; /* reset before mixin does its thing*/
     margin-right: 0; /* reset before mixin does its thing*/
     @include gallery(2.5 of 10);
