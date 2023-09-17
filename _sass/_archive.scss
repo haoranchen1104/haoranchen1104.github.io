@@ -305,17 +305,18 @@
     }
 
     .archive__item-excerpt {
-      display: inline-block;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
       font-size: $type-size-7;
       max-height: fit-content;
       overflow: hidden;
     }
 
     .archive__item-excerpt#citation{
-      height: 11px;
+      -webkit-line-clamp: 1;
     }
     .archive__item-excerpt#intro{
-      height: 150px;
+      -webkit-line-clamp: 3;
     }
   }
   .card-footer{
