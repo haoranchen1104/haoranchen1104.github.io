@@ -130,7 +130,7 @@
 
   @include breakpoint($small) {
     padding-right: $right-sidebar-width-narrow;
-    @include gallery(5 of 10);
+    // @include gallery(5 of 10);
     .archive__item-teaser {
       max-height: 200px;
     }
@@ -144,7 +144,7 @@
     padding-right: $right-sidebar-width;
     margin-left: 0; /* reset before mixin does its thing*/
     margin-right: 0; /* reset before mixin does its thing*/
-    @include gallery(2.5 of 10);
+    // @include gallery(2.5 of 10);
 
     .archive__item-teaser {
       display: inline;
@@ -165,10 +165,10 @@
     padding-right: $right-sidebar-width-wide;
     margin-left: 0; /* reset before mixin does its thing*/
     margin-right: 0; /* reset before mixin does its thing*/
-    @include gallery(2.5 of 10);
+    // @include gallery(2.5 of 10);
 
     .archive__item-teaser {
-      display: inline;
+      display: inline-block;
       max-height: 200px;
       vertical-align: top;
       width: 30%;
