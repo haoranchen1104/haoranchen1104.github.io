@@ -133,6 +133,10 @@
     .archive__item-teaser {
       max-height: 200px;
     }
+
+    .archive__item-excerpt {
+      display: none;
+    }
   }
 
   @include breakpoint($medium) {
@@ -141,12 +145,37 @@
     @include gallery(2.5 of 10);
 
     .archive__item-teaser {
-      max-height: 120px;
+      display: inline;
+      max-height: 150px;
+      vertical-align: top;
+      width: 30%;
     }
 
     .archive__item-excerpt {
-      display: block;
+      display: inline-block;
+      width: 66%;
       font-size: $type-size-6;
+      overflow: hidden;
+    }
+  }
+
+  @include breakpoint($large) {
+    margin-left: 0; /* reset before mixin does its thing*/
+    margin-right: 0; /* reset before mixin does its thing*/
+    @include gallery(2.5 of 10);
+
+    .archive__item-teaser {
+      display: inline;
+      max-height: 200px;
+      vertical-align: top;
+      width: 30%;
+    }
+
+    .archive__item-excerpt {
+      display: inline-block;
+      width: 66%;
+      font-size: $type-size-6;
+      overflow: hidden;
     }
   }
 }
