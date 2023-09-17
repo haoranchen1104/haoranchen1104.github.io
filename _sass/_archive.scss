@@ -290,6 +290,7 @@
     width: 30%;
     height: 200px;
     object-fit: cover;
+    text-align: left;
   }
   .card-body{
     height: 185px;
@@ -298,12 +299,13 @@
     margin-left:1rem;
     .archive__item-title {
       margin-top: 0.5em;
-      font-size: $type-size-6;
+      font-size: $type-size-5;
     }
 
     .archive__item-excerpt {
       display: inline-block;
       font-size: $type-size-7;
+      max-height: fit-content;
       overflow: hidden;
     }
   }
