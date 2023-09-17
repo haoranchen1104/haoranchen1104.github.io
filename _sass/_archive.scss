@@ -305,18 +305,18 @@
     }
 
     .archive__item-excerpt {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
+      display: inline;
       font-size: $type-size-7;
       max-height: fit-content;
       overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .archive__item-excerpt#citation{
-      -webkit-line-clamp: 1;
+      max-height: 11px;
     }
     .archive__item-excerpt#intro{
-      -webkit-line-clamp: 3;
+      max-height: 150px;
     }
   }
   .card-footer{

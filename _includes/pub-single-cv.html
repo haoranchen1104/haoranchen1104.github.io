@@ -8,8 +8,12 @@
 
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% assign citation = post.citation | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% assign intro = post.excerpt | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
+  {% assign citation = post.citation %}
+  {% assign intro = post.intro %}
 {% endif %}
 
 <div class="card">
@@ -31,11 +35,11 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </p>
-    {% if post.venue%}<p class="archive__item-excerpt" id="citation" itemprop="description">{{ post.citation | markdownify }}</p> {% endif %}
+    {% if post.venue%}<p class="archive__item-excerpt" id="citation" itemprop="description">{{ citation }}</p> {% endif %}
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" id="intro" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <p class="archive__item-excerpt" id="intro" itemprop="description">{{ intro }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" id="intro" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    <p class="archive__item-excerpt" id="intro" itemprop="description"><p>{{ intro }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
   </div>
   <div class="card-footer">  
