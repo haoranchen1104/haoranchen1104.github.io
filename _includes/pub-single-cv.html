@@ -12,20 +12,18 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<div class="card">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
-      </div>
+    {% if teaser %}
+      <img src=
+        {% if teaser contains "://" %}
+          "{{ teaser }}"
+        {% else %}
+          "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+        {% endif %}
+        alt="">
     {% endif %}
+  <div class="card-body">
     <h3 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -42,13 +40,20 @@
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
+  </div>
+  <div class="card-footer">  
+    {% if post.teaser_title %}
+      <span>{{post.teaser_title}}</span>
+    {% else %}
+      <span></span>
+    {% endif %}
     {% if post.codeurl and post.paperurl %}
       <p><a href=" {{ post.paperurl }} "><u>Paper</u></a> <a href=" {{ post.codeurl }} "><u>Code</u></a></p>
     {% elsif post.paperurl %}
       <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
     {% elsif post.codeurl %}
       <p><a href=" {{ post.codeurl }} "><u>Code</u></a></p>
-    {% endif %}  
-  </li>
+    {% endif %}
+  </div>
  </article>
 </div>

@@ -275,3 +275,72 @@
     }
   }
 }
+
+/*
+   Card
+   ========================================================================== */
+
+.card{
+  @include breakpoint($medium) {
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($large) {
+    padding-right: $right-sidebar-width;
+  }
+
+  @include breakpoint($x-large) {
+    padding-right: $right-sidebar-width-wide;
+  }
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
+
+  position:relative;
+  display: flex;
+  border:1px solid gray;
+  margin-bottom:1rem;
+  img{
+    width: 200px;
+    height: 130px;
+    border-bottom: 30px solid orange;
+
+  }
+  .card-body{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    margin-left:1rem;
+    .archive__item-title {
+      margin-top: 0.5em;
+      font-size: $type-size-5;
+    }
+
+    .archive__item-excerpt {
+      display: inline-block;
+      font-size: $type-size-6;
+      overflow: hidden;
+    }
+  }
+  .card-footer{
+    position:absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    span{
+      width:200px;
+      display:inline-block;
+    }
+    p{
+      margin-left:10px;
+    }
+  }
+
+}
+  
+  
+  
