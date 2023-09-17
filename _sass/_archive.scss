@@ -303,7 +303,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      width: calc(100%);
     }
 
     .archive__item-excerpt {
@@ -311,7 +310,6 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       display: inline-block;
-      width: calc(100%);
     }
 
     .archive__item-excerpt#citation {
