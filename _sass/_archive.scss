@@ -290,7 +290,9 @@
     width: 30%;
     height: 200px;
     object-fit: cover;
-    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
   .card-body{
     height: 185px;
@@ -307,6 +309,13 @@
       font-size: $type-size-7;
       max-height: fit-content;
       overflow: hidden;
+    }
+
+    .archive__item-excerpt#citation{
+      height: 11px;
+    }
+    .archive__item-excerpt#intro{
+      height: 150px;
     }
   }
   .card-footer{
