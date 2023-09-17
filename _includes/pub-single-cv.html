@@ -35,11 +35,11 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </p>
-    {% if post.venue%}<p class="archive__item-excerpt" id="citation" itemprop="description">{{ citation }}</p> {% endif %}
+    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ citation }}</p> {% endif %}
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" id="intro" itemprop="description">{{ intro }}</p>
+    <p class="archive__item-excerpt" itemprop="description">{{ intro }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" id="intro" itemprop="description"><p>{{ intro }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ intro }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
   </div>
   <div class="card-footer">  
