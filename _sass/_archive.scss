@@ -317,12 +317,12 @@
     .archive__item-excerpt#citation {
       font-size: $type-size-7;
       // max-height: 15px;
-      -webkit-line-clamp: 1;
+      -webkit-line-clamp: 2;
     }
     .archive__item-excerpt#intro {
       font-size: $type-size-6;
       // max-height: 140px;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
     }
   }
   .card-footer{

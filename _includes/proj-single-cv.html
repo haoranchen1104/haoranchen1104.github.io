@@ -29,7 +29,7 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </p>
-    {% if post.venue%}<p class="archive__item-excerpt" id="citation" itemprop="description">{{ citation }}</p> {% endif %}
+    <p class="archive__item-excerpt" id="citation" itemprop="description">{{ citation }}</p>
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" id="intro" itemprop="description">{{ intro }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
@@ -42,13 +42,20 @@
     {% else %}
       <span></span>
     {% endif %}
-    {% if post.codeurl and post.paperurl %}
-      <p><a href=" {{ post.paperurl }} "><u>Paper</u></a> <a href=" {{ post.codeurl }} "><u>Code</u></a></p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
-    {% elsif post.codeurl %}
-      <p><a href=" {{ post.codeurl }} "><u>Code</u></a></p>
-    {% endif %}
+    <p>
+      {% if post.paperurl %}
+      <a href=" {{ post.paperurl }} "><u>Paper</u></a> 
+      {% endif %}
+      {% if post.reporturl %}
+      <a href=" {{ post.reporturl }} "><u>Report</u></a> 
+      {% endif %}
+      {% if post.codeurl %}
+      <a href=" {{ post.codeurl }} "><u>Code</u></a> 
+      {% endif %}
+      {% if post.videourl %}
+      <a href=" {{ post.videourl }} "><u>Video</u></a> 
+      {% endif %}
+    </p>
   </div>
  <!-- </article> -->
 </div>

@@ -25,7 +25,11 @@ redirect_from:
   {% endfor %}</ul>
 
 ### Course Projects
+<font size="1"><i>$^*$ denotes equal contribution.</i></font>
 
+  <ul>{% for post in site.projects reversed %}
+    {% include proj-single-cv.html %}
+  {% endfor %}</ul>
 
 ### Internship
 

@@ -42,13 +42,17 @@
     {% else %}
       <span></span>
     {% endif %}
-    {% if post.codeurl and post.paperurl %}
-      <p><a href=" {{ post.paperurl }} "><u>Paper</u></a> <a href=" {{ post.codeurl }} "><u>Code</u></a></p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
-    {% elsif post.codeurl %}
-      <p><a href=" {{ post.codeurl }} "><u>Code</u></a></p>
-    {% endif %}
+    <p>
+      {% if post.paperurl %}
+      <a href=" {{ post.paperurl }} "><u>Paper</u></a> 
+      {% endif %}
+      {% if post.codeurl %}
+      <a href=" {{ post.codeurl }} "><u>Code</u></a> 
+      {% endif %}
+      {% if post.videourl %}
+      <a href=" {{ post.videourl }} "><u>Video</u></a> 
+      {% endif %}
+    </p>
   </div>
  <!-- </article> -->
 </div>
