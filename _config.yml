@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Haoran Chen (陈浩然)"
   avatar           : "profile.jpg"
-  bio              : "Hi, I am currently a master student at ETH Zürich. I am passionate about 3D scene reconstruction and understanding."
+  bio              : "Hi, I am currently a master student at ETH Zürich, working closely with <a href='https://asl.ethz.ch/'>Autonomous Systems Lab</a>. I am passionate about 3D scene reconstruction and understanding."
   location         : "Zürich, Switzerland"
   # employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
