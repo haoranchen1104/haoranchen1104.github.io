@@ -44,10 +44,20 @@
     {% endif %}
     <p>
       {% if post.paperurl %}
-      <a href=" {{ post.paperurl }} "><u>Paper</u></a> 
+      <a href=
+        {% if post.paperurl contains "://" %}
+        "{{ post.paperurl }}"
+        {% else %}
+        "{{ post.paperurl | prepend: base_path }}"
+        {% endif %}><u>Paper</u></a> 
       {% endif %}
       {% if post.reporturl %}
-      <a href=" {{ post.reporturl }} "><u>Report</u></a> 
+      <a href=
+        {% if post.reporturl contains "://" %}
+        "{{ post.reporturl }}"
+        {% else %}
+        "{{ post.reporturl | prepend: base_path }}"
+        {% endif %}><u>Report</u></a>  
       {% endif %}
       {% if post.codeurl %}
       <a href=" {{ post.codeurl }} "><u>Code</u></a> 
