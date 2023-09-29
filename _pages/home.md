@@ -18,7 +18,7 @@ redirect_from:
 * Bachelor of Engineering in Information Science, Huazhong University of Science and Technology, 2017-2021
   * GPA: 3.95/4.00 (rank: 1<font size="2"><sup>st</sup></font>); National Scholarship (2020)
 
-### Publications
+### Publication
 
   <ul>{% for post in site.publications reversed %}
     {% include pub-single-cv.html %}
