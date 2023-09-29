@@ -33,6 +33,6 @@ redirect_from:
 
 ### Internship
 
-* Intern of computer vision and machine learning
-  * ABB Research Center (Nov. 2022 - Apr. 2023)
-  * Main focus: AI-empowered Smart Container Shipping
+<ul>{% for post in site.internships reversed %}
+    {% include proj-single-cv.html %}
+  {% endfor %}</ul>

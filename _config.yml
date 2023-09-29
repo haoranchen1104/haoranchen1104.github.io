@@ -184,6 +184,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  internships:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -234,6 +237,15 @@ defaults:
   - scope:
       path: ""
       type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: true
+  # _internships
+  - scope:
+      path: ""
+      type: internships
     values:
       layout: single
       author_profile: true
