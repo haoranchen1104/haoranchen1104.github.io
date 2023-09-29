@@ -36,3 +36,10 @@ redirect_from:
 <ul>{% for post in site.internships reversed %}
     {% include proj-single-cv.html %}
   {% endfor %}</ul>
+
+### Competitions
+<font size="1"><i>$^*$ denotes equal contribution.</i></font>
+
+<ul>{% for post in site.competitions reversed %}
+    {% include proj-single-cv.html %}
+  {% endfor %}</ul>
