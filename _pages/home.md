@@ -14,9 +14,11 @@ redirect_from:
 
 Hi, I am currently a master student at ETH Zürich, working closely with <a href='https://asl.ethz.ch/'>Autonomous Systems Lab</a>. I am passionate about 3D scene reconstruction and understanding.
 
-:sparkles: News :sparkles:
+✨ news ✨
 
 \[2024-01-01\] "Panoptic Vision-Language Feature Fields" is accepted by _IEEE Robotics and Automation Letters_.
+
+<br/><br/>
 
 ### Education
 
