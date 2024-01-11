@@ -12,6 +12,10 @@ redirect_from:
 
 ---
 
+##### News
+
+* \[2024-01-01\] "Panoptic Vision-Language Feature Fields" is accepted by _IEEE Robotics and Automation Letters_.
+
 ### Education
 
 * Master in Robotics, Systems and Control,  ETH Zürich, 2021-2024 (expected)
