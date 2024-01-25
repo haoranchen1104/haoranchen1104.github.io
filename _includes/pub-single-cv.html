@@ -43,6 +43,9 @@
       <span></span>
     {% endif %}
     <p>
+      {% if post.projecturl %}
+      <a href=" {{ post.projecturl }} "><u>Website</u></a> 
+      {% endif %}
       {% if post.paperurl %}
       <a href=" {{ post.paperurl }} "><u>Paper</u></a> 
       {% endif %}

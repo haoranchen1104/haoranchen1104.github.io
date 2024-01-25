@@ -47,6 +47,9 @@ layout: default
           <p>{{ page.citation }}</p>
         {% endif %}
         <p>
+          {% if page.projecturl %}
+          <a href=" {{ page.projecturl }} "><u>Website</u></a> 
+          {% endif %}
           {% if page.paperurl %}
           <a href=" {{ page.paperurl }} "><u>Paper</u></a> 
           {% endif %}
