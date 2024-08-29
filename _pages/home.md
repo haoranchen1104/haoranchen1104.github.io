@@ -12,19 +12,21 @@ redirect_from:
 
 ---
 
-Hi, I am currently a master student at ETH Zürich, working closely with <a href='https://asl.ethz.ch/'>Autonomous Systems Lab</a>. I am passionate about 3D scene reconstruction and understanding.
-<br/><br/>
-✨ news ✨
+Hi, I am Haoran Chen, currently a research associate at <a href='http://generalroboticslab.com/'> General Robotics Lab</a> at Duke University, advised by Prof. <a href='http://boyuanchen.com/'>Boyuan Chen</a>.
 
-\[2024-01-01\] "Panoptic Vision-Language Feature Fields" is accepted by _IEEE Robotics and Automation Letters_.
+
+Before that, I obtained my master degree (MS RSC) from ETH Zürich, where I mainly worked on 3D robot perception and scene understanding in <a href='https://asl.ethz.ch/'>Autonomous Systems Lab</a>, supervised by Prof. <a href='https://asl.ethz.ch/the-lab/people/person-detail.Mjk5ODE=.TGlzdC8yMDI4LDEyMDExMzk5Mjg=.html'>Roland Siegwart</a>. I had great pleasure doing research with Dr. <a href='https://keke.dev/'>Kenneth Blomqvist</a>, <a href='https://scholar.google.com/citations?user=qwSANZoAAAAJ&hl=it'>Francesco Milano</a> and Dr. <a href='https://schmluk.github.io/'>Lukas Schmid</a>. 
+
+Prior to ETH Zürich, I graduated from <a href='https://english.hust.edu.cn/'>Huazhong University of Science and Technology</a> with BS EE, where I worked on ML in FPGA advised by Prof. Donghong Zuo, and robot design advised by Prof. Yujiang Zeng.
 
 ---
+✨ news ✨
 
-### Education
+\[2024-07\] Joined General Robotics Lab at Duke University
 
-* Master in Robotics, Systems and Control,  ETH Zürich, 2021-2024 (expected)
-* Bachelor of Engineering in Information Science, Huazhong University of Science and Technology, 2017-2021
-  * GPA: 3.95/4.00 (rank: 1<font size="2"><sup>st</sup></font>); National Scholarship (2020)
+\[2024-01\] "Panoptic Vision-Language Feature Fields" is accepted by _IEEE RAL_.
+
+---
 
 ### Publication
 

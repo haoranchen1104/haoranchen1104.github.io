@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Haoran Chen (陈浩然)"
   avatar           : "profile.jpg"
-  bio              : "Master student in Robotics, ETH Zürich."
-  location         : "Zürich, Switzerland"
+  bio              : "Research Associate, Duke Robotics."
+  location         : "Durham, NC"
   # employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   # googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "chenhao@student.ethz.ch"
+  email            : "haoran.chen2@duke.edu"
   # researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   # uri              :
   # bitbucket        :
